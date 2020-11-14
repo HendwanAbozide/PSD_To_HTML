@@ -15,12 +15,14 @@
   <link rel="manifest" href="site.webmanifest">
   <link rel="apple-touch-icon" href="icon.png">
   <!-- Place favicon.ico in the root directory -->
+ 
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
 
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/main.css">
-  <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
 
   <meta name="theme-color" content="#fafafa">
 </head>
@@ -32,16 +34,17 @@
   <section class="section1">
 
       <div class="transparent-layer"> 
+
         <header class="header">
           
 
             <div class="logo-holder">
               <img src="img/Logo.png" alt="Logo" id="logo"> 
-          </div>
+            </div>
 
-          <div class="search-image">
-            <img src="img/Search.png" alt="searchimage">
-          </div>
+            <div class="search-image clearfix">
+              <i class="fa fa-search fa-2x search-icon" aria-hidden="true"></i>
+            </div>
 
             <input class="menu-btn" type="checkbox" id="menu-btn" />
             <label class="menu-icon" for="menu-btn"><span class="nav-icon"></span></label>
@@ -58,8 +61,8 @@
 
         <div class="content1">
           <h1 class="title1"> DELICIOUS <br> SUSHI</h1>
-          <h3 class="subtitle1">Lorem ipsum dolor sit amet, <br>consectetur adipiscing elit. Vivamus <br>lacinia odio vitae vestibulum<br> vestibulum. </h3>
-          <button class="button1"> Order Now</button>
+          <p class="subtitle1">Lorem ipsum dolor sit amet, <br>consectetur adipiscing elit. Vivamus <br>lacinia odio vitae vestibulum<br> vestibulum. </p>
+          <a class="button1"> Order Now</a>
         </div>
       
         <div class="wave">
@@ -76,47 +79,52 @@
 
     <div class="content2">
       <h1>Best Seller</h1>
-      <h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit.<br>Vivamus lacinia odio vitae vestibulum vestibulum. </h3> 
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.<br>Vivamus lacinia odio vitae vestibulum vestibulum. </p> 
       
     </div>
 
-    <div class="image1-section2">
-      <img src="img/fish.png" alt="fish">
+    <div class="image1-section2 ">
+      <img class="image" src="img/fish.png" alt="fish">
     </div>
 
     <div class="image2-section2">
-      <img src="img/riceball.svg" alt="riceball">
+      <img class="image" src="img/riceball.png" alt="riceball">
     </div>
 
-    <div class="group-images2">
+    <div class="center-images-content clearfix">
+      <div class="group-images1">
+          <img id="plate1" src="img/Image1.png" alt="plate1">
 
-      <img id="plate1" src="img/Image1.png" alt="plate1">
-      <img  id="plate2" src="img/Image2.png" alt="plate2">
-      <img  id="plate3" src="img/Image3.png" alt="plate3">
-      
-    
-    </div>
-    <div class="images-content2">
-
-        <div class="image1-titles1">
-            <h4 class="h4-edit2">Title Here</h4>
+          <div class="image-titles">
+            <h4 class="h4-edit">Title Here</h4>
             <br>
-            <p class="p-edit2">Lorem ipsum dolor sit amet,<br> consectetur adipiscing elit.</p>
+            <p class="p-edit">Lorem ipsum dolor sit amet,<br> consectetur adipiscing elit.</p>
+          </div>
+      </div>
+
+        <div class="group-images2">
+            <img  id="plate2" src="img/Image2.png" alt="plate2">
+
+            <div class="image-titles">
+              <h4 class="h4-edit">Title Here</h4>
+              <br>
+              <p class="p-edit">Lorem ipsum dolor sit amet,<br> consectetur adipiscing elit.</p>
+            </div> 
+        </div>
+      
+        <div class="group-images3">
+
+            <img  id="plate3" src="img/Image3.png" alt="plate3">
+            
+            <div class="image-titles">
+              <h4 class="h4-edit">Title Here</h4>
+              <br>
+              <p class="p-edit">Lorem ipsum dolor sit amet,<br> consectetur adipiscing elit.</p>
+            </div> 
         </div>
 
-        <div class="image2-titles2">
-            <h4 class="h4-edit2">Title Here</h4>
-            <br>
-            <p class="p-edit2">Lorem ipsum dolor sit amet,<br> consectetur adipiscing elit.</p>
-        </div> 
-
-        <div class="image3-titles3">
-          <h4 class="h4-edit2">Title Here</h4>
-          <br>
-          <p class="p-edit2">Lorem ipsum dolor sit amet,<br> consectetur adipiscing elit.</p>
-      </div>    
-
     </div>
+  </div>
 
 </section>
 
@@ -133,9 +141,9 @@
     <div class="section3-content">
         <div class="content3">
             <h1 class="similar-title"> Best tasty</h1>
-            <h3 class="similar-subtitle">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum vestibulum. </h3>
+            <p class="similar-subtitle">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum vestibulum. </p>
         </div>
-        <button class="button3"> Order Now</button>  
+        <a class="button3"> Order Now</a>  
     </div>
   </div>
 
@@ -153,20 +161,20 @@
 
     <div class="content4">
       <h1 class="title4"> STATISTICS </h1>
-      <h3 class="subtitle4">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus <br>lacinia odio vitae vestibulum vestibulum. </h3>
+      <p class="subtitle4">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus <br>lacinia odio vitae vestibulum vestibulum. </p>
     </div>
 
 
     <div class="image1-section4">
-      <img src="img/shrimp.png" alt="shrimp">
+      <img class="image" src="img/shrimp.png" alt="shrimp">
     </div>
 
     <div class="image2-section4">
-      <img src="img/sushiroll.png" alt="sushi">
+      <img class="image" src="img/sushiroll.png" alt="sushi">
     </div>
 
     <div class="image3-section4">
-      <img src="img/fish.png" alt="fish">
+      <img class="image" src="img/fish.png" alt="fish">
     </div>
 
                   
@@ -175,20 +183,20 @@
 
       <div class="circle"> 
         <div class="circle_content">
-          <span class="edit4">123</span> store
+          <span class="edit4">123<br></span> store
        </div>
       </div>
 
       <div class="circle"> 
           <div class="circle_content">
-            <span class="edit4">100</span> menu
+            <span class="edit4">100 <br></span> menu
           </div>
       </div> 
 
 
       <div class="circle">
           <div class="circle_content">
-            <span class="edit4">200</span> chef
+            <span class="edit4">200 <br></span> chef
           </div>
       </div>    
     </div>
@@ -200,26 +208,26 @@
   <section class="section5">
 
     <div class="image1-section5">
-      <img src="img/riceball.svg" alt="riceball">
+      <img class="image" src="img/riceball.png" alt="riceball">
     </div>
 
     <div class="image2-section5">
-      <img src="img/fishrice.png" alt="fishrice">
+      <img class="image" src="img/fishrice.png" alt="fishrice">
     </div>
 
     <div class="image3-section5">
-      <img src="img/shrimprice.png" alt="shrimprice">
+      <img class="image" src="img/shrimprice.png" alt="shrimprice">
     </div>
     
     <div class="image4-section5">
-      <img src="img/dish.png" alt="sushi">
+      <img class="image" src="img/dish.png" alt="sushi">
     </div>
 
 
     <div class="content5">
       <h1 class="similar-title">DELICIOUS</h1>
-      <h3 class="similar-subtitle">Lorem ipsum dolor sit amet, consectetur <br>adipiscing elit. Vivamus lacinia odio vitae <br>vestibulum vestibulum. </h3>
-      <button class="button5">Order Now</button> 
+      <p class="similar-subtitle">Lorem ipsum dolor sit amet, consectetur <br>adipiscing elit. Vivamus lacinia odio vitae <br>vestibulum vestibulum. </p>
+      <a class="button5">Order Now</a> 
     </div>
 
   </section>
@@ -231,11 +239,11 @@
 
   <section class="section6">
 
-    <div class="content6">
+    <div class="content6 clearfix">
 
-      <img src="img/Image.png" alt="phoebe">
-      <p>If you are a culinary fan, if you like to spend time in your <br>kitchen, you likely find yourself looking for reliable resources<br> through which you can</p>
-      <h2>Phoebe Franzier</h2>
+      <img class="quoteimage" src="img/Image.png" alt="phoebe">
+      <q class="quote">If you are a culinary fan, if you like to spend time in your kitchen, you likely find yourself looking for reliable resources through which you can</q>
+      <address>Phoebe Franzier</address>
     </div>
 
   </section>
@@ -247,19 +255,19 @@
   <section class="section7">
 
     <div class="image1-section7">
-      <img src="img/sushiroll.png" alt="sushiblack">
+      <img class="image" src="img/sushiroll.png" alt="sushiblack">
    </div>
 
    <div class="image2-section7">
-    <img src="img/shrimp.png" alt="sushi">
+    <img class="image" src="img/shrimp.png" alt="sushi">
   </div>
 
     <div class="image3-section7">
-      <img src="img/shrimprice.png" alt="shrimprice">
+      <img class="image" src="img/shrimprice.png" alt="shrimprice">
     </div>
 
     <div class="image4-section7">
-      <img src="img/fish.png" alt="sushi">
+      <img class="image" src="img/fish.png" alt="sushi">
     </div>
     
     <div class="content7">
@@ -267,10 +275,11 @@
       <h1 class="similar-title">SUBSCRIBE</h1>
       <h3 class="similar-subtitle">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus <br> lacinia odio vitae vestibulum vestibulum. </h3>
 
-      <div class="input7">
-        <input placeholder="Your Email">
-        <button class="button7"> SUBSCRIBE</button>
-     </div>
+  
+     <form class="input7">
+      <input name="email" id="email" placeholder="Your Email">
+      <input for="email" type="submit" id="subscribe" value="SUBSCRIBE" >
+    </form> 
 
   </div>
 
